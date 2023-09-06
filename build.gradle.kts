@@ -33,10 +33,10 @@ dependencies {
     // Thymeleaf
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.1.2.RELEASE")
-    implementation("org.springframework.boot:spring-boot-devtools")
     // Other
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     compileOnly("org.projectlombok:lombok")
+    compileOnly("org.springframework.boot:spring-boot-devtools")
     annotationProcessor("org.projectlombok:lombok")
     // Test Dependencies
     testImplementation("org.springframework.boot:spring-boot-starter-test")
