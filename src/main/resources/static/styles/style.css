@@ -1,19 +1,10 @@
-.sidebar {
-    display: block;
+.buttons {
+    display: flex;
     width: fit-content;
     margin-top: 1%;
     padding-right: 1%;
     padding-left: 5px;
     padding-bottom: 100%;
-}
-
-.sidebar-tab {
-    margin-bottom: 5%;
-    font-size: 100%;
-    font-style: normal;
-    text-align: center;
-    text-underline-style: none;
-    display: block;
 }
 
 .header {
@@ -22,4 +13,8 @@
 
 .header > h2 {
     text-align: center;
+}
+
+.nav-button{
+margin-right:2px;
 }

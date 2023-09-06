@@ -4,22 +4,30 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 <head>
     <meta charset="UTF-8">
-    <title>Home - PinPointCompendium</title>
+    <title>Home</title>
+    <link rel="icon" href="ppc5.ico" type="images/x-icon">
+<!--    To do fix favicon-->
 </head>
 <body style="background-color: var(--bs-body-bg)">
-<div>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div style="display: flex; justify-content: space-between;">
+        <div style="flex-align: start">
             <img th:src="@{/images/ppc5.svg}" style="width: 50px; height: 50px">
-
-        </nav>
-    </header>
-    <div class="sidebar">
-        <a th:href="@{/}" class="d-block sidebar-tab btn btn-primary" role="button">Home</a>
-        <a th:href="@{/system}" class="d-block sidebar-tab btn btn-primary" role="button">System</a>
-        <a th:href="TODO" class="d-block sidebar-tab btn btn-primary" role="button">Albums</a>
-        <a th:href="TODO" class="d-block sidebar-tab btn btn-primary" role="button">Trips</a>
+        </div>
+        <div style="margin-top:15px; margin-left:15px;">
+            <input type="search" width="20%">
+            <button style="width: 30px; height:30px;">
+                <img th:src="@{/images/search.svg}" style="width: 30px; height:30px;">
+            </button>
+        </div>
+        <div class="buttons">
+            <a th:href="@{/}" class="nav-button d-block sidebar-tab btn btn-primary" role="button">Home</a>
+            <a th:href="@{/system}" class="nav-button d-block sidebar-tab btn btn-primary" role="button">System</a>
+            <a th:href="TODO" class="nav-button d-block sidebar-tab btn btn-primary" role="button">Albums</a>
+            <a th:href="TODO" class="nav-button d-block sidebar-tab btn btn-primary" role="button">Trips</a>
+        </div>
     </div>
-</div>
+    <div>
+
+    </div>
 </body>
 </html>
