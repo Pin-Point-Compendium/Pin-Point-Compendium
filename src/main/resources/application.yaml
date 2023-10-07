@@ -1,0 +1,16 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/static/templates/
+  datasource:
+    url: jdbc:h2:file:/data/demo
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  devtools:
+    livereload:
+      enabled: true
+ppc:
+  filesystem:
+    default.path: C:\Users\anton\Pictures\ppc
